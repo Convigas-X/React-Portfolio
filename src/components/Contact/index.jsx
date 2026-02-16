@@ -2,9 +2,9 @@ import { useState } from 'react';
 import { motion } from 'framer-motion';
 import { 
   Send, 
-  Github, 
-  Linkedin, 
-  Twitter, 
+  Instagram, 
+  MessageSquare, 
+  MessageCircle, 
   Mail,
   MapPin,
   Phone,
@@ -93,9 +93,9 @@ const Contact = () => {
   };
 
   const socialLinks = [
-    { icon: Github, href: 'https://github.com', label: 'GitHub' },
-    { icon: Linkedin, href: 'https://linkedin.com', label: 'LinkedIn' },
-    { icon: Twitter, href: 'https://twitter.com', label: 'Twitter' },
+    { icon: MessageCircle, href: 'https://wa.me/923154909017', label: 'WhatsApp' },
+    { icon: Instagram, href: 'https://instagram.com/idk_maybe_shayan', label: 'Instagram' },
+    { icon: MessageSquare, href: 'https://discord.com/users/Convigas.X', label: 'Discord' },
   ];
 
   return (
