@@ -125,6 +125,10 @@ const Contact = () => {
             transition={{ duration: 0.4, ease: smoothEase }}
           >
             <form onSubmit={handleSubmit} className="space-y-6">
+              {/* FormSubmit Configuration */}
+              <input type="hidden" name="_captcha" value="false" />
+              <input type="hidden" name="_template" value="table" />
+              
               <div>
                 <label htmlFor="name" className="block text-sm font-medium text-slate-300 mb-2">
                   Your Name
