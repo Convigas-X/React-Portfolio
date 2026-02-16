@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useMemo } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Menu, X, Code2, MessageCircle } from 'lucide-react';
 
@@ -8,13 +8,13 @@ const Navbar = () => {
   const [activeSection, setActiveSection] = useState('home');
   const [isWhatsAppModalOpen, setIsWhatsAppModalOpen] = useState(false);
 
-  const navLinks = [
+  const navLinks = useMemo(() => [
     { name: 'Home', href: '#home', id: 'home' },
     { name: 'Expertise', href: '#expertise', id: 'expertise' },
     { name: 'Experience', href: '#work-experience', id: 'work-experience' },
     { name: 'Projects', href: '#projects', id: 'projects' },
     { name: 'Contact', href: '#contact', id: 'contact' },
-  ];
+  ], []);
 
   const whatsappNumber = '+92-315-4909017';
   const whatsappLink = `https://wa.me/${whatsappNumber.replace(/\D/g, '')}`;
@@ -40,7 +40,7 @@ const Navbar = () => {
 
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
+  }, [navLinks]);
 
   const scrollToSection = (e, href) => {
     e.preventDefault();
