@@ -305,7 +305,7 @@ const Projects = () => {
           className="text-center mt-16"
         >
           <motion.a
-            href="https://github.com"
+            href="https://github.com/Convigas-X"
             target="_blank"
             rel="noopener noreferrer"
             whileHover={{ scale: 1.03 }}
