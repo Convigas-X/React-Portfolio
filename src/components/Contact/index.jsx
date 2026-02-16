@@ -317,7 +317,7 @@ const Contact = () => {
 
             {/* Social Links */}
             <div className="pt-8 border-t border-outline">
-              <h3 className="text-white font-semibold mb-4">Follow Me</h3>
+              <h3 className="text-white font-semibold mb-4">Connect with Me</h3>
               <div className="flex gap-4">
                 {socialLinks.map((social) => (
                   <motion.a
